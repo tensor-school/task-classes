@@ -14,12 +14,6 @@ describe('Классы', () => {
             expect(counter.counter).toBe(5);
         });
 
-        it('Вызов конструктора с числом инициализирует счётчик этим числом', () => {
-            const counter = new Counter(5);
-
-            expect(counter.counter).toBe(5);
-        });
-
         it('Вызов increment у класса со значением счётчика по умолчанию', () => {
             const counter = new Counter();
             counter.increment();
@@ -53,7 +47,7 @@ describe('Классы', () => {
             expect(counter.counter).toBe(7);
         });
 
-        it('Вызов increment у класса, инициализированного числом', () => {
+        it('Вызов decrement у класса, инициализированного числом', () => {
             const counter = new Counter(5);
             counter.decrement();
 
